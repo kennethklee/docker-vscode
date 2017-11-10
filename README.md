@@ -12,8 +12,7 @@ docker run -d --name vscode \
               -v /dev/shm:/dev/shm \
               -v ${HOME}/.vscode:/root/.config/Code \
               -e DISPLAY \
-              kennethklee/docker-vscode
+              kennethkl/vscode
 ```
 
 Don't forget to disallow X11 connections after: `xhost -local:docker`.
-
